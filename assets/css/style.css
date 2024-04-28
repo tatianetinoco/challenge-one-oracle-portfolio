@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --rosa: #E72965;
+    --rosaClaro: #fce6ee;
+    --rosaTransparente: #e729655b;
+    --azul: #b2c6f1;
+    --cinzaClaro: #f2f2f2;
+    --branco: #ffffff;
+    --cinza: #808080;
+  }
+
+body{
+    background: rgb(252,230,238);
+    background: linear-gradient(180deg, rgba(252,230,238,1) 0%, rgba(178,198,241,1) 100%);
+}
+
+.section__title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--rosa);
+    font-family: 'Poppins', sans-serif;
+}
+
+.section__container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* HEADER  */
+.header__logo{
+    text-decoration: none;
+    font-family: "Parisienne", cursive;
+    font-size: 1.3rem;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 1100px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+/* MENU  */
+.nav__itens{
+    display: flex;
+    gap: 20px;
+    list-style: none;  
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.nav__itens li a{
+    font-family: "Pridi", serif;
+    text-decoration: none;
+}
+
+.nav__itens li a:hover{
+   color: var(--rosa);
+}
+
+/* HERO  */
+.profile{
+    background: rgb(252,230,238);
+    background: linear-gradient(180deg, rgba(252,230,238,1) 0%, rgba(178,198,241,1) 100%);
+}
+
+.profile__container{
+    display: flex;
+    align-items: center;
+    padding: 50px 10px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.profile_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__title{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-family: "Courgette", cursive;
+}
+
+.profile__name{
+    font-family: "Courgette", cursive;
+    color: var(--rosa);
+}
+
+.profile_content h3{
+    margin-bottom: 15px;
+}
+
+.profile__social__media a{
+    text-decoration: none;
+    padding-right: 16px;
+}
+
+.hero__img{
+    border-radius: 50%;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ABOUT  */
+.about{
+    background-color: #fce6ee;
+}
+
+.about__container{
+    padding: 100px 10px;
+}
+
+.about__section__title{
+    font-size: 2rem;
+    color: var(--rosa);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.about__paragraph{
+    margin-bottom: 1rem;
+}
+
+/* SKILL  */
+.skills{
+    padding: 50px 10px;
+    background-color: #f2f2f2;
+}
+
+.skills__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 150px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.skills__box:hover, .hobbiess__box:hover{
+    box-shadow: 0px 4px 16px var(--rosaTransparente), 0px 4px 16px var(--rosaTransparente), 0px 8px 32px var(--rosaTransparente);
+}
+
+.skills__box__paragraph{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HOBBIES  */
+.hobbies{
+    padding: 50px 10px;
+    background-color: #f2f2f2;
+}
+
+.hobbiess__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 150px;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.hobbies__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* CURSOS  */
+.courses{
+    background-color: #fce6ee;
+    padding: 100px 10px;
+}
+
+.courses__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.courses__img{
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.courses__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    background-color: #e7c4d1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.courses__box h4, p {
+    align-self: flex-start;
+}
+
+/* PROJETOS  */
+.projects{
+    background-color: #f2f2f2;
+    padding: 50px 10px;
+}
+
+.projects__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.projects__box{
+    padding: 1.5rem 2.5rem;
+    border-radius: 15px;
+    background: rgb(252,230,238);
+    background: linear-gradient(0deg, rgba(252,230,238,1) 0%, rgba(178,198,241,1) 100%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.projects_img{
+    margin-bottom: 1rem;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.projects__title{
+    margin-bottom: 5px;
+}
+
+.projects__btn{
+    display: flex;
+    margin-top: 1rem;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.projects__btn a{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.projects__btn button{
+    border: 0;
+    border-radius: 8px;
+    padding: .8rem 1.2rem;
+    background-color:#fce6ee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.projects__btn button:hover{
+    background-color:#fad4e2;
+    cursor: pointer;
+}
+
+.projects__btn a:hover{
+    color:#E72965;
+}
+
+.form__contact{
+    background-color: rgb(238, 255, 0);
+}
+
+/* FORM  */
+.form__contact{
+    background: rgb(252,230,238);
+    background: linear-gradient(180deg, rgba(252,230,238,1) 0%, rgba(178,198,241,1) 100%);
+}
+
+.form__contact__section__title{
+    font-size: 2rem;
+    color: var(--rosa);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+
+.form__container{
+    padding: 50px 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.form__container__text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-style: italic;
+    width: 450px;
+    color: #808080;
+}
+
+.form__container__text img{
+    height: 450px;
+    align-self: center;
+    padding-top: 2rem;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 2rem 2rem 3.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.form__input{
+    border: 0;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #fce6ee;
+}
+
+.form__input:focus{
+    outline: 1px solid var(--rosa);
+}
+
+form div{
+    margin-bottom: 1rem;
+}
+
+#name, #email{
+    height: 2rem;
+}
+
+::placeholder{
+    padding-left: 1rem;
+    text-transform: lowercase;
+}
+
+.form__btn__submit{
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+    color: #ffffff;
+    background-color: #E72965;
+}
+
+.form__btn__submit:hover{
+    background-color: #be1a4e;
+    cursor: pointer;
+}
+
+textarea{
+    margin-bottom: 1.2rem;
+}
+
+/* ERROR  */
+.error{
+    color: red;
+}
+
+.form__input__error{
+    outline: 2px solid red;
+}
+
+/* FOOTER  */
+.footer{
+    background-color: #313131;
+    color: var(--cinza);
+}
+
+.footer__container{
+    text-align: center;
+    padding: 20px 0;
+    font-size: .9rem;
+} 
+
+.footer__container a{
+  text-decoration: none;
+  padding-right: 5px;
+  color: var(--rosa);
+  letter-spacing: 1px;
+} 
+
+.footer__container a:hover{
+    color:var(--rosaClaro); 
+} 
+
+#icon-menu{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #E72965;
+    display: none;
+}
+
+
+/* MEDIA  */
+@media (max-width: 850px){
+
+    .header__container{
+        width: auto;
+    }
+
+    .nav{
+        display: none;
+        width: 100%;
+    }
+
+    .menu-show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon-menu{
+        display: block;
+    }
+
+    .nav__itens{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav__itens li{
+        gap: 1px;
+        border-bottom: 1px solid #e729655e;;
+    }
+
+    .nav__itens li:hover{
+        width: 100%;
+        background-color: #e729655b;
+    }
+
+    .profile__container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about__container {
+        width: 100%;
+    }
+
+    .hero__img{
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    .skills, .hobbies, .courses, .projects{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills h3 , .hobbies h3, .courses h3, .projects h3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .skills__container , .hobbies__container, .courses__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills__box, .hobbiess__box {
+        margin: 1rem;
+        flex-grow: 1;
+    }
+
+    .courses__box{
+        margin: 1rem;
+        width: auto;
+        flex-grow: 1;
+    }
+
+    .projects__box{
+        margin: 1rem;
+        width: auto;
+    }
+
+    .projects__box img{
+        width: 100%;
+    }
+
+    .form__container{
+        display: flex;
+        flex-wrap: wrap;  
+        width: 100%;
+    }
+
+    .form__contact{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .form__container__text{
+        width: 80%;
+    }
+
+    .form__container__text img{
+        display: none;
+    }
+
+    #contactForm{
+        width: 80%;
+    }
+
+    .footer__container{
+        width: 100%;
+    }
+   
+}
+
+
+@media (max-width: 500px){
+    .profile__title{
+        font-size: 2rem;
+    }
+
+    .courses__box img{
+        width: 100%;
+    }
+}
+  
+

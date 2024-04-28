@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Challenge Front-end Portfólio</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="./index.html" class="header__logo">Tatiane Tinoco</a>
+            <button id="icon-menu" onclick="mostrarMenu()">&#9776;</button>
+            <nav class="nav" id="menu">
+                <ul class="nav__itens">
+                    <li class="nav__item"><a href="#sobreMim">Sobre Mim</a></li>
+                    <li class="nav__item"><a href="#skill">Skills</a></li>
+                    <li class="nav__item"><a href="#hobbie">Hobbies</a></li>
+                    <li class="nav__item"><a href="#cursos">Cursos</a></li>
+                    <li class="nav__item"><a href="#projetos">Projetos</a></li>
+                    <li class="nav__item"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile__container">
+                <div class="profile_content">
+                    <h2 class="profile__title">
+                        Olá, meu nome é <span class="profile__name">Tatiane Tinoco</span> e sou Desenvolvedora Full Stack
+                    </h2>
+                    <h3>
+                        Atualmente estou participando do projeto Oracle ONE na Alura.
+                    </h3>
+                    <div class="profile__social__media">
+                        <a href="https://github.com/tatianetinoco" target="_blank" rel="noopener noreferrer">Github <img src="./assets/img/arrow.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/tatianetinoco/" target="_blank" rel="noopener noreferrer">Linkedin <img src="./assets/img/arrow.png" alt=""></a>
+                        <a href="https://www.instagram.com/tatianetinoco_/" target="_blank" rel="noopener noreferrer">Instagram <img src="./assets/img/arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <img src="./assets/img/img-profile.jfif" alt="" class="hero__img">
+            </div>
+        </section>
+
+        <section class="about" id="sobreMim">
+            <div class="about__container section__container">
+                <h3 class="about__section__title">Sobre Mim</h3>
+                <p class="about__paragraph">
+                    Meu nome é Tatiane e sou de Belo Horizonte. Estou em transição de carreira para a área de tecnologia. Iniciei minha jornada com um curso de Front-End na Proz Educação. Este curso não apenas consolidou minha base, mas também despertou meu interesse em buscar mais conhecimentos.
+                </p>
+                <p class="about__paragraph">
+                    Motivada pelo desejo de expandir meus horizontes e abraçar desafios mais amplos, embarquei em um bootcamp FullStack, focado em C# e Angular. No entanto, minha jornada está apenas começando. Planejo aprimorar minhas habilidades técnicas, buscando certificações relevantes e uma formação acadêmica a fim de aprofundar minha compreensão teórica e prática e me tornar uma profissional ainda mais capacitada.                
+                </p>
+                <p class="about__paragraph">
+                    Estou ansiosa para os desafios que o futuro reserva nesta empolgante e dinâmica área, e estou comprometida em me dedicar plenamente ao meu crescimento profissional e ao sucesso nesta nova etapa.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills" id="skill">
+            <h3 class="section__title">Skills</h3>
+            <div class="skills__container section__container">
+
+                <div class="skills__box">
+                    <img class="skills__img" src="./assets/img/html.svg" alt="Html">
+                    <p class="skills__box__paragraph">Html</p>
+                </div>
+
+                <div class="skills__box">
+                    <img class="skills__img" src="./assets/img/css.svg" alt="css">
+                    <p class="skills__box__paragraph">css</p>
+                </div>
+
+                <div class="skills__box">
+                    <img class="skills__img" src="./assets/img/js.svg" alt="">
+                    <p class="skills__box__paragraph">JavaScript</p>
+                </div>
+
+                <div class="skills__box">
+                    <img class="skills__img" src="./assets/img/angular.svg" alt="angular">
+                    <p class="skills__box__paragraph">Angular</p>
+                </div>
+
+                <div class="skills__box">
+                    <img class="skills__img" src="./assets/img/csharp.svg" alt="csharp">
+                    <p class="skills__box__paragraph">C#</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies" id="hobbie">
+            <h3 class="section__title">Hobbies</h3>
+            <div class="hobbies__container section__container">
+
+                <div class="hobbiess__box">
+                    <img class="hobbies__img" src="./assets/img/headphones.svg" alt="">
+                    <p>Ouvir Musica</p>
+                </div>
+
+                <div class="hobbiess__box">
+                    <img class="hobbies__img" src="./assets/img/guitar.svg" alt="">
+                    <p>Tocar Violão</p>
+                </div>
+
+                <div class="hobbiess__box">
+                    <img class="hobbies__img" src="./assets/img/tv.svg" alt="">
+                    <p>Editar Vídeos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses" id="cursos">
+            <h3 class="section__title">Cursos</h3>
+            <div class="courses__container section__container">
+
+                <div class="courses__box">
+                    <img class="courses__img" src="./assets/img/logo-proz.png" alt="Logotipo Proz Educação">
+                    <h4 class="courses__title">Programação Front-End</h4>
+                    <p class="courses__subtitle">Proz Educação 2023</p>
+                </div>
+
+                <div class="courses__box">
+                    <img class="courses__img" src="./assets/img/logo-alura-oracle.svg" alt="Logotipo Alura Oracle">
+                    <h4 class="courses__title">Programação Front-End</h4>
+                    <p class="courses__subtitle">Oracle Next Education 2024</p>
+                </div>
+
+                <div class="courses__box">
+                    <img class="courses__img" src="./assets/img/logo-ima-tech.png" alt="Logotipo Imã Tech">
+                    <h4 class="courses__title">Formação FullStack Sharp Coders</h4>
+                    <p class="courses__subtitle">Imã Tech 2024</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects" id="projetos">
+            <h3 class="section__title">Projetos</h3>
+            <div class="projects__container section__container">
+
+                <div class="projects__box">
+                    <img class="projects_img" src="./assets/img/img-projeto-hamburgueria.png" alt="Screenshot site de Hamburgueria">
+                    <h4 class="projects__title">Hamburgueria</h4>
+                    <p class="projects__info">Projeto Proz Educação</p>
+                    <div class="projects__btn">
+                        <button><a href="https://github.com/tatianetinoco/bom-burguer" target="_blank" rel="noopener noreferrer">Repositório</a></button>
+                        <button><a href="https://tatianetinoco.github.io/bom-burguer/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img class="projects_img" src="./assets/img/img-projeto-site-de-festival-de-musica.png" alt="">
+                    <h4 class="projects__title">Landing page Festival de Música</h4>
+                    <p class="projects__info">Projeto Curso Descodificadas</p>
+                    <div class="projects__btn">
+                        <button><a href="https://github.com/tatianetinoco/landing-page-rock-fest" target="_blank" rel="noopener noreferrer">Repositório</a></button>
+                        <button><a href="https://tatianetinoco.github.io/landing-page-rock-fest/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img class="projects_img" src="./assets/img/img-projeto-site-de-viagem-angular.png" alt="Screenshot site de viagem em Angular">
+                    <h4 class="projects__title">Site de Viagem - Angular</h4>
+                    <p class="projects__info">Desenvolvido em Angular 17</p>
+                    <div class="projects__btn">
+                        <button><a href="https://github.com/tatianetinoco/site-de-viagem-angular" target="_blank" rel="noopener noreferrer">Repositório</a></button>
+                        <button><a href="https://github.com/tatianetinoco/site-de-viagem-angular" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img class="projects_img" src="./assets/img/img-projeto-app-age.png" alt="Screenshot site de viagem em Angular">
+                    <h4 class="projects__title">Calculadora Idade</h4>
+                    <p class="projects__info">Desafio Front-End Mentor</p>
+                    <div class="projects__btn">
+                        <button><a href="https://github.com/tatianetinoco/age-calculator-app" target="_blank" rel="noopener noreferrer">Repositório</a></button>
+                        <button><a href="https://tatianetinoco.github.io/age-calculator-app/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+                    </div>
+                </div>
+
+                <div class="projects__box">
+                    <img class="projects_img" src="./assets/img/img-projeto-jogo-adivinha-numero.png" alt="Screenshot site de viagem em Angular">
+                    <h4 class="projects__title">Jogo Adivinhe o Número</h4>
+                    <p class="projects__info">Jogo interativo de adivinhação</p>
+                    <div class="projects__btn">
+                        <button><a href="https://github.com/tatianetinoco/jogo-adivinhe-numero" target="_blank" rel="noopener noreferrer">Repositório</a></button>
+                        <button><a href="https://tatianetinoco.github.io/jogo-adivinhe-numero/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="form__contact" id="contato">
+            <div class="section__container">
+                <div class="form__container">
+                    <div class="form__container__text">
+                        <p class="form__contact__section__info">Entre em contato pelo formulário e entrarei em contato o mais rápido possível.</p>
+                        <img src="./assets/img/cel.png ">
+                    </div>
+                    <form id="contactForm" action="" onsubmit="return validateForm()">
+                        <h3 class="form__contact__section__title">Contato</h3>
+                        <div>
+                            <label for="name">Nome*</label>
+                            <input class="form__input" name="name" id="name" placeholder="Digite Seu Nome">
+                            <small id="nameError" class="error"></small>
+                        </div>
+                
+                        <div>
+                            <label for="email">E-Mail*</label>
+                            <input class="form__input" type="email" name="email" id="email" placeholder="Digite Seu E-Mail">
+                            <small id="emailError" class="error"></small>
+                        </div>
+                
+                        <textarea class="form__input" name="message" id="message" cols="30" rows="10"></textarea>
+                        <input class="form__btn__submit" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__container section__container">
+
+            <div>
+                <h3>Desenvolvido Por Tatiane Tinoco</h3>
+                <p>Challenge ONE | Front End - Portfólio</p>
+                <a href="https://github.com/tatianetinoco" target="_blank" rel="noopener noreferrer">Github </a>
+                <a href="https://www.linkedin.com/in/tatianetinoco/" target="_blank" rel="noopener noreferrer">Linkedin </a>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
